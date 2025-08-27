@@ -1,16 +1,13 @@
-# caches e coisas geradas
 **/.cache/
 **/node_modules/
 **/plugged/
 **/package-lock.json
 **/__pycache__/
 
-# possíveis segredos (revise antes de versionar)
 **/token*
 **/secrets*
 **/credentials*
 **/*.key
 **/*.pem
 
-# VSCode (se for subir depois)
 **/.vscode/extensions/
