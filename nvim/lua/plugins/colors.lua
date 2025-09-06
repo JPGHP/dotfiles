@@ -1,5 +1,26 @@
 return {
 	{
+		"baliestri/aura-theme",
+		lazy = false,
+		priority = 1000,
+		config = function(plugin)
+			vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
+			vim.cmd([[colorscheme aura-dark]])
+		end
+	},
+	{
+		"scottmckendry/cyberdream.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("cyberdream").setup({
+				transparent = true,
+				borderless_pickers = false,
+				terminal_colors = true,
+			})
+		end,
+	},
+	{
 		"dark-orchid/neovim",
 		lazy = false,
 		priority = 1000,

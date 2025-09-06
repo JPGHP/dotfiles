@@ -10,7 +10,7 @@ return {
 		lazy = false,
 		config = function()
 			require("themery").setup({
-				themes = { "kanagawa", "gruvbox", "everforest", "dark-orchid" },
+				themes = { "kanagawa", "gruvbox", "everforest", "dark-orchid", "cyberdream", "aura-dark" },
 				livePreview = true,
 			})
 			vim.keymap.set("n", "ts", ":Themery<CR>", { desc = "Show Themes" })
