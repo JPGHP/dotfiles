@@ -1,5 +1,13 @@
 return {
 	{
+		"tiagovla/tokyodark.nvim",
+		opts = {},
+		config = function(_, opts)
+			require("tokyodark").setup(opts)
+			vim.cmd [[colorscheme tokyodark]]
+		end
+	},
+	{
 		"baliestri/aura-theme",
 		lazy = false,
 		priority = 1000,
