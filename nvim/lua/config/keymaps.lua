@@ -10,7 +10,8 @@ keymap.set("n", "<leader>l", "<C-w>l", { desc = "Go to Right Window" })
 -- Ações
 keymap.set("n", "-", string.format(":vertical resize -%d<CR>", resize_value), { desc = "Resize -" })
 keymap.set("n", "=", string.format(":vertical resize +%d<CR>", resize_value), { desc = "Resize +" })
-
+keymap.set("n", "<leader>`", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true, desc = "Toggle terminal" })
+keymap.set("t", "<leader>`", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true, desc = "Toggle terminal" })
 keymap.set("n", "<leader>sv", ":vsplit<CR><C-w>l", { desc = "Split vertically" })
 
 -- Funções básicas
@@ -34,7 +35,7 @@ keymap.set(
 -- Gradle
 keymap.set("n", "<leader>gr", ":!gradle run<CR>", { desc = "Gradle, run..." })
 
--- Auto Tree (And LSP) add 
+-- Auto Tree (And LSP) add
 keymap.set("n", "<leader>lsp", function()
 	local lang = vim.fn.input("What language you wanna add? ")
 	local langLSP = vim.fn.input(string.format("What LSP does %s uses? ", lang))

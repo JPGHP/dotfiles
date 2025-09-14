@@ -14,7 +14,13 @@ return {
 					position = "right"
 				},
 				vim.keymap.set("n", "<leader>n", ":Neotree toggle<cr>", { desc = "Toggle Neo-tree" }),
-				filter = { dotfiles = true, },
+				filesystem = {
+					filtered_items = {
+						visible = true, 
+						hide_dotfiles = false, 
+						hide_gitignored = false, 
+					}
+				},
 			})
 		end,
 	},
