@@ -1,3 +1,3 @@
 # dotfiles
 
-<h1>My hyprland dotfiles</h1>
+<h1>My Linux dotfiles</h1>
