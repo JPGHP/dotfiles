@@ -29,6 +29,7 @@ _G.user_servers = {
 	lua = "lua_ls",
 	c = "clangd",
 	go = "gopls",
+	c_sharp = "csharp_ls",
 	-- sla
 	markdown = "marksman",
 }
